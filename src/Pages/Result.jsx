@@ -18,11 +18,19 @@ const Header = styled.div`
   font-size: 40px;
   color: #000000;
   margin-bottom: 20px;
+  @media screen and (max-width: 780px) {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  @media screen and (max-width: 360px) {
+    margin-bottom: 16px;
+    font-size: 28px;
+  }
 `;
 
 const Contents = styled.div`
   width: 600px;
-  height: auto;
+  height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,12 +38,26 @@ const Contents = styled.div`
   padding: 10px 20px 30px 20px;
   border-radius: 10px;
   background: #ffffff90;
+  @media screen and (max-width: 780px) {
+    width: 400px;
+    height: 600px;
+  }
+  @media screen and (max-width: 360px) {
+    width: 300px;
+    height: 400px;
+  }
 `;
 
 const Title = styled.div`
   font-size: 30px;
   margin: 20px 0 10px;
   color: #793b02;
+  @media screen and (max-width: 780px) {
+    font-size: 24px;
+  }
+  @media screen and (max-width: 360px) {
+    font-size: 18px;
+  }
 `;
 
 const LogoImg = styled.div`
@@ -43,6 +65,14 @@ const LogoImg = styled.div`
     width: 350px;
     height: 350px;
     border: 4px solid #743826;
+    @media screen and (max-width: 780px) {
+      width: 300px;
+      height: 300px;
+    }
+    @media screen and (max-width: 360px) {
+      width: 180px;
+      height: 180px;
+    }
   }
 `;
 
@@ -51,6 +81,12 @@ const Desc = styled.div`
   font-size: 20px;
   color: #a0663f;
   padding: 10px;
+  @media screen and (max-width: 780px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 360px) {
+    font-size: 16px;
+  }
 `;
 
 const style = {
@@ -65,6 +101,20 @@ const ButtonWrap = styled.div`
     width: 400px;
     font-size: 18px;
     ${style}
+  }
+  @media screen and (max-width: 780px) {
+    button {
+      width: 360px;
+      font-size: 18px;
+      ${style}
+    }
+  }
+  @media screen and (max-width: 360px) {
+    button {
+      width: 280px;
+      font-size: 18px;
+      ${style}
+    }
   }
 `;
 

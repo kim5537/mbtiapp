@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 const Wrapper = styled.div`
-  color: #000000;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
