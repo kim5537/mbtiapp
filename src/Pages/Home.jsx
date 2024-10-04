@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 const Wrapper = styled.div`
-  color: #fff;
+  color: #000000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 
 const Header = styled.div`
   font-size: 40px;
-  color: #cc5a52;
+  color: #743826;
 `;
 
 const Contents = styled.div`
@@ -36,14 +36,15 @@ const LogoImg = styled.div`
   & > img {
     width: 350px;
     height: 350px;
-    border: 4px solid #cc5a52;
+    border: 4px solid #743826;
   }
 `;
 
 const style = {
-  background: "#d89292",
+  background: "#743826",
   border: "none",
   padding: "10px",
+  color: "#fff",
 };
 
 const ButtonWrap = styled.div`

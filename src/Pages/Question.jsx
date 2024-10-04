@@ -20,12 +20,12 @@ const Title = styled.div`
   text-align: center;
   margin-bottom: 20px;
   padding: 8px 16px;
-  background: #cc5a52;
+  background: #743826;
   border-radius: 8px;
 `;
 
 const style = {
-  background: "#d89292",
+  background: "#a0663f",
   border: "none",
   padding: "10px",
 };
