@@ -53,6 +53,22 @@ const ButtonWrap = styled.div`
     font-size: 18px;
     ${style}
   }
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+    button {
+      width: 360px;
+      font-size: 18px;
+      ${style}
+    }
+  }
+  @media screen and (max-width: 360px) {
+    flex-direction: column;
+    button {
+      width: 280px;
+      font-size: 18px;
+      ${style}
+    }
+  }
 `;
 
 const Desc = styled.div`

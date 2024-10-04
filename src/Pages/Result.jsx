@@ -160,7 +160,7 @@ const Result = () => {
           <Button onClick={handleClickButton} variant="light">
             테스트 다시하기
           </Button>
-          <KakakoSHareButton />
+          <KakakoSHareButton data={resultDate} />
         </ButtonWrap>
       </Contents>
     </Wrapper>
