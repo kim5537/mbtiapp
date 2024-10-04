@@ -54,7 +54,7 @@ ${reset}
 
   body {
     font-family:"CookieRun";
-    background: url("https://blog.kakaocdn.net/dn/AM6P1/btqZQIMTwid/CJWOT60buKTYXrDaeP5Sbk/img.png") center/cover no-repeat;
+    background: url("/img/cat-7635983_1920.png") center/cover;
     height: 100vh;
   }
 `;
