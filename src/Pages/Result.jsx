@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from "react-bootstrap";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { ResultData } from "../assets/resultData";
+import KakakoSHareButton from "../components/KakakoSHareButton";
 
 const Wrapper = styled.div`
   color: #000000;
@@ -19,7 +20,7 @@ const Header = styled.div`
   color: #000000;
   margin-bottom: 20px;
   @media screen and (max-width: 780px) {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     font-size: 30px;
   }
   @media screen and (max-width: 360px) {
@@ -29,8 +30,8 @@ const Header = styled.div`
 `;
 
 const Contents = styled.div`
-  width: 600px;
-  height: 800px;
+  width: 500px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,12 +98,16 @@ const style = {
 };
 
 const ButtonWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   button {
     width: 400px;
     font-size: 18px;
     ${style}
   }
   @media screen and (max-width: 780px) {
+    flex-direction: column;
     button {
       width: 360px;
       font-size: 18px;
@@ -110,6 +115,7 @@ const ButtonWrap = styled.div`
     }
   }
   @media screen and (max-width: 360px) {
+    flex-direction: column;
     button {
       width: 280px;
       font-size: 18px;
@@ -136,7 +142,7 @@ const Result = () => {
     setResultData(result);
   }, [mbti]);
 
-  console.log(resultDate);
+  // console.log(resultDate);
   return (
     <Wrapper>
       <Header> 예비집사 판별기 </Header>
@@ -146,13 +152,15 @@ const Result = () => {
           <img src={resultDate.image} className="rounded-circle" />
         </LogoImg>
         <Desc>
-          예비 집사님과 찰떡 궁합인 고양이는 {resultDate.best}와 어울리는
+          예비 집사님과 찰떡 궁합인 고양이는!!! <br /> {resultDate.best}와
+          어울리는
           {resultDate.name}
         </Desc>
         <ButtonWrap>
           <Button onClick={handleClickButton} variant="light">
             테스트 다시하기
           </Button>
+          <KakakoSHareButton />
         </ButtonWrap>
       </Contents>
     </Wrapper>
